@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    /*Primary */
+    --colorDarkCyan: hsl(185, 75%, 39%);
+    --colorVerydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --colorDarkgrayishblue: hsl(227, 10%, 46%);
+    /*Neutral */
+    --colorDarkgray: hsl(0, 0%, 59%);
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg"), var(--colorDarkCyan);
+    background-repeat: no-repeat;
+    background-position: -45% 200%, 140% -150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.profilecard {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 350px;
+    max-width: 90%;
+    height: fit-content;
+}
+
+.topbg img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: block;
+}
+
+.profilepic {
+    height: 50px;
+}
+
+.profilepic img {
+    position: relative;
+    top: -50px;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.intro {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+.intro h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.intro .age {
+    font-size: 20px;
+    color: var(--colorDarkgray);
+}
+
+.intro p {
+    font-size: 15px;
+    color: var(--colorDarkgray);
+    padding-top: 5px;
+    text-align: center;
+}
+
+hr {
+    color: var(--colorDarkgray);
+    margin-bottom: 10px;
+}
+
+.status {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 0 10px 0;
+}
+
+.status .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.status p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.status h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media(max-width:768px) {
+    body {
+        background-repeat: no-repeat;
+        background-position: 140% 250%, -35% -160%;
+    }
+}
